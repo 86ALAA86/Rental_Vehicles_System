@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6D4E172-833C-421E-9046-4C05C46FA355}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rental_Vehicles_System</RootNamespace>
+    <AssemblyName>Rental Vehicles System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Checks\Controls\ctrlCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlCheck.Designer.cs">
+      <DependentUpon>ctrlCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlEngineCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlEngineCheck.Designer.cs">
+      <DependentUpon>ctrlEngineCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlExteriorCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlExteriorCheck.Designer.cs">
+      <DependentUpon>ctrlExteriorCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlInteriorCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlInteriorCheck.Designer.cs">
+      <DependentUpon>ctrlInteriorCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlShowCheckInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checks\Controls\ctrlShowCheckInfo.Designer.cs">
+      <DependentUpon>ctrlShowCheckInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\frmCheckInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checks\frmCheckInfo.Designer.cs">
+      <DependentUpon>frmCheckInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\frmAddEditVehicleCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checks\frmAddEditVehicleCheck.Designer.cs">
+      <DependentUpon>frmAddEditVehicleCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checks\frmShowCheckInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checks\frmShowCheckInfo.Designer.cs">
+      <DependentUpon>frmShowCheckInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\ctrlShowCustomerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers\ctrlShowCustomerInfo.Designer.cs">
+      <DependentUpon>ctrlShowCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\ctrlShowCustomerInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers\ctrlShowCustomerInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlShowCustomerInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frmAddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frmAddEditCustomer.Designer.cs">
+      <DependentUpon>frmAddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frmSearchForCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frmSearchForCustomers.Designer.cs">
+      <DependentUpon>frmSearchForCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frmShowCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frmShowCustomerInfo.Designer.cs">
+      <DependentUpon>frmShowCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\clsGlobal.cs" />
+    <Compile Include="Global\clsValidating.cs" />
+    <Compile Include="Global\Util.cs" />
+    <Compile Include="Log IN\frmLogINSceen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log IN\frmLogINSceen.Designer.cs">
+      <DependentUpon>frmLogINSceen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\ctrlShowMaintenanceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maintenance\ctrlShowMaintenanceInfo.Designer.cs">
+      <DependentUpon>ctrlShowMaintenanceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmAddEditMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmAddEditMaintenance.Designer.cs">
+      <DependentUpon>frmAddEditMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\frmShowMaintenanceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\frmShowMaintenanceInfo.Designer.cs">
+      <DependentUpon>frmShowMaintenanceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrlShowPersonInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrlShowPersonInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlShowPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmAddEditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmAddEditPerson.Designer.cs">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\setLoginInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>setLoginInfo.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rental Booking\ctrlShowBookingInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rental Booking\ctrlShowBookingInfo.Designer.cs">
+      <DependentUpon>ctrlShowBookingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental Booking\frmAddEditRentalBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental Booking\frmAddEditRentalBooking.Designer.cs">
+      <DependentUpon>frmAddEditRentalBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rental Booking\frmShowBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental Booking\frmShowBookInfo.Designer.cs">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\ctrlReturnVehicleInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Returns\ctrlReturnVehicleInfo.Designer.cs">
+      <DependentUpon>ctrlReturnVehicleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\frmInputBookingID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmInputBookingID.Designer.cs">
+      <DependentUpon>frmInputBookingID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\frmReturnVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmReturnVehicle.Designer.cs">
+      <DependentUpon>frmReturnVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\frmShowReturnInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmShowReturnInfo.Designer.cs">
+      <DependentUpon>frmShowReturnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specifications\ctrlShowSpecificationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Specifications\ctrlShowSpecificationInfo.Designer.cs">
+      <DependentUpon>ctrlShowSpecificationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specifications\frmAddEditVehicleSpecification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specifications\frmAddEditVehicleSpecification.Designer.cs">
+      <DependentUpon>frmAddEditVehicleSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specifications\frmShowSpecificationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specifications\frmShowSpecificationInfo.Designer.cs">
+      <DependentUpon>frmShowSpecificationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrlShowPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrlShowPersonInfo.Designer.cs">
+      <DependentUpon>ctrlShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\ctrlShowTransactionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transactions\ctrlShowTransactionInfo.Designer.cs">
+      <DependentUpon>ctrlShowTransactionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\frmShowTransactionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\frmShowTransactionInfo.Designer.cs">
+      <DependentUpon>frmShowTransactionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrlShowUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrlShowUserInfo.Designer.cs">
+      <DependentUpon>ctrlShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmChangeUserPasword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangeUserPasword.Designer.cs">
+      <DependentUpon>frmChangeUserPasword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\ctrlShowVehicleInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicles\ctrlShowVehicleInfo.Designer.cs">
+      <DependentUpon>ctrlShowVehicleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\ctrlShowVehicleInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicles\ctrlShowVehicleInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlShowVehicleInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\frmAddEditVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles\frmAddEditVehicles.Designer.cs">
+      <DependentUpon>frmAddEditVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\frmShowVehicleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles\frmShowVehicleInfo.Designer.cs">
+      <DependentUpon>frmShowVehicleInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Checks\Controls\ctrlCheck.resx">
+      <DependentUpon>ctrlCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\Controls\ctrlEngineCheck.resx">
+      <DependentUpon>ctrlEngineCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\Controls\ctrlExteriorCheck.resx">
+      <DependentUpon>ctrlExteriorCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\Controls\ctrlInteriorCheck.resx">
+      <DependentUpon>ctrlInteriorCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\Controls\ctrlShowCheckInfo.resx">
+      <DependentUpon>ctrlShowCheckInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\frmCheckInfo.resx">
+      <DependentUpon>frmCheckInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\frmAddEditVehicleCheck.resx">
+      <DependentUpon>frmAddEditVehicleCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checks\frmShowCheckInfo.resx">
+      <DependentUpon>frmShowCheckInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\ctrlShowCustomerInfo.resx">
+      <DependentUpon>ctrlShowCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\ctrlShowCustomerInfoWithFilter.resx">
+      <DependentUpon>ctrlShowCustomerInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frmAddEditCustomer.resx">
+      <DependentUpon>frmAddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frmSearchForCustomers.resx">
+      <DependentUpon>frmSearchForCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frmShowCustomerInfo.resx">
+      <DependentUpon>frmShowCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log IN\frmLogINSceen.resx">
+      <DependentUpon>frmLogINSceen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\ctrlShowMaintenanceInfo.resx">
+      <DependentUpon>ctrlShowMaintenanceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmAddEditMaintenance.resx">
+      <DependentUpon>frmAddEditMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\frmShowMaintenanceInfo.resx">
+      <DependentUpon>frmShowMaintenanceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrlShowPersonInfoWithFilter.resx">
+      <DependentUpon>ctrlShowPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmAddEditPerson.resx">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rental Booking\ctrlShowBookingInfo.resx">
+      <DependentUpon>ctrlShowBookingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental Booking\frmAddEditRentalBooking.resx">
+      <DependentUpon>frmAddEditRentalBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental Booking\frmShowBookInfo.resx">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\ctrlReturnVehicleInfo.resx">
+      <DependentUpon>ctrlReturnVehicleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmInputBookingID.resx">
+      <DependentUpon>frmInputBookingID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmReturnVehicle.resx">
+      <DependentUpon>frmReturnVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmShowReturnInfo.resx">
+      <DependentUpon>frmShowReturnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specifications\ctrlShowSpecificationInfo.resx">
+      <DependentUpon>ctrlShowSpecificationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specifications\frmAddEditVehicleSpecification.resx">
+      <DependentUpon>frmAddEditVehicleSpecification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specifications\frmShowSpecificationInfo.resx">
+      <DependentUpon>frmShowSpecificationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrlShowPersonInfo.resx">
+      <DependentUpon>ctrlShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\ctrlShowTransactionInfo.resx">
+      <DependentUpon>ctrlShowTransactionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\frmShowTransactionInfo.resx">
+      <DependentUpon>frmShowTransactionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrlShowUserInfo.resx">
+      <DependentUpon>ctrlShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangeUserPasword.resx">
+      <DependentUpon>frmChangeUserPasword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\ctrlShowVehicleInfo.resx">
+      <DependentUpon>ctrlShowVehicleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\ctrlShowVehicleInfoWithFilter.resx">
+      <DependentUpon>ctrlShowVehicleInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\frmAddEditVehicles.resx">
+      <DependentUpon>frmAddEditVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\frmShowVehicleInfo.resx">
+      <DependentUpon>frmShowVehicleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\setLoginInfo.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>setLoginInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RVS Business Layer\RVS Business Layer.csproj">
+      <Project>{019f5ab9-ac89-4bb0-959e-ca975310dc34}</Project>
+      <Name>RVS Business Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Userpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 10, 2025, 08_37_30 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 10, 2025, 02_26_57 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a sleek and minimali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlbedoBase_XL_Simple_abstract_background_with_purple_shapes_on_3 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlbedoBase_XL_Simple_abstract_background_with_purple_shapes_on_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 16, 2025, 06_52_43 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 16, 2025, 06_34_27 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 24, 2025, 08_20_19 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 24, 2025, 08_25_23 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 26, 2025, 02_52_20 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 16, 2025, 06_52_43 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 26, 2025, 02_45_13 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 24, 2025, 08_25_23 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Nov 24, 2025, 08_25_23 PM2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReturnVehicleAdding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReturnVehicleAdding1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

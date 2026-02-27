@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|d:\\visual studio c#\\visual project winforms\\rental vehicles system\\log in\\frmloginsceen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|solutionrelative:log in\\frmloginsceen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\log in\\frmloginsceen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|solutionrelative:log in\\frmloginsceen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6D4E172-833C-421E-9046-4C05C46FA355}|Rental Vehicles System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogINSceen.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Log IN\\frmLogINSceen.cs",
+              "RelativeDocumentMoniker": "Log IN\\frmLogINSceen.cs",
+              "ToolTip": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Log IN\\frmLogINSceen.cs",
+              "RelativeToolTip": "Log IN\\frmLogINSceen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:28:53.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLogINSceen.cs [Design]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Log IN\\frmLogINSceen.cs",
+              "RelativeDocumentMoniker": "Log IN\\frmLogINSceen.cs",
+              "ToolTip": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Log IN\\frmLogINSceen.cs [Design]",
+              "RelativeToolTip": "Log IN\\frmLogINSceen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:28:51.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Visual Studio C#\\Visual Project WinForms\\Rental Vehicles System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:23:03.302Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
