@@ -1,9 +1,0 @@
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\bin\Debug\RVS Business Layer.dll
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\bin\Debug\RVS Business Layer.pdb
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\bin\Debug\RVS DataAccess Layer.dll
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\bin\Debug\RVS DataAccess Layer.pdb
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\obj\Debug\RVS Business Layer.csproj.AssemblyReference.cache
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\obj\Debug\RVS Business Layer.csproj.CoreCompileInputs.cache
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\obj\Debug\RVS Busi.6DF16126.Up2Date
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\obj\Debug\RVS Business Layer.dll
-D:\Visual Studio C#\Visual Project WinForms\RVS Business Layer\obj\Debug\RVS Business Layer.pdb
